@@ -1,0 +1,168 @@
+body {
+    background-color: black; 
+    color: aliceblue; 
+    text-align: center;
+    font-family: "Texto";
+}
+
+h1 { color: brown; 
+    font-family: "Titulos";
+    font-size: 6rem;
+    text-align: center;
+  
+}
+
+p {
+  
+  margin-bottom: 1rem;
+
+}
+
+
+
+h2 { color: brown; 
+    font-family: "Titulos";
+    font-size: 2rem;
+    margin: 20px 0 10px;
+    
+  
+    
+}
+
+h3 { color: brown; 
+    font-family: "Titulos";
+    font-size: 1.8rem;
+    margin: 20px 0 10px;
+    
+  
+    
+}
+.cajaTarjetas {
+  display: flex;
+  flex-wrap: wrap;             
+  justify-content: space-around; 
+  gap: 20px;                    
+}
+
+.tarjeta {
+  flex: 1 1 250px;               
+  max-width: 300px;              
+  background-color: brown;       
+  padding: 15px;
+  text-align: center;
+ 
+}
+
+
+@font-face {
+  font-family: "Texto";
+  src: url("../css/fonts/Merriweather/Merriweather_24pt-Regular.ttf") format('truetype');
+}
+
+
+@font-face {
+  font-family: "Titulos";
+  src: url("../css/fonts/Cinzel/Cinzel-Bold.ttf") format('truetype');
+}
+
+
+
+
+
+
+a {
+    font-family: "Texto";
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.1rem;
+}
+
+a:hover {
+    color: brown;
+}
+
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 0.9rem;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+}
+
+
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("../imagenes/fondohistoria.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.15;        
+  z-index: -1;
+  pointer-events: none;
+}
+
+
+main {
+ 
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+body > div {
+  display: flex;
+  justify-content: center;
+}
+
+.arcos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.arco {
+  width: 320px;          
+  background-color: black;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 35px black (0,0,0,0,0.85);
+  color: aliceblue;
+  cursor: pointer;
+  overflow: hidden;  
+    }
+
+.arco h3 {
+  margin: 0; 
+  margin-bottom: 10px;
+  color: brown;
+  font-family: "Titulos";
+  font-size: 1.6rem;
+}
+
+.arco p {
+  margin: 0;
+  max-height: 0;         
+  opacity: 0;
+  overflow: hidden;
+  line-height: 1.6;
+  font-size: 1.05rem;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  }
+
+  .arco:hover p {
+  max-height:  100% ;   
+  opacity: 1;
+  }

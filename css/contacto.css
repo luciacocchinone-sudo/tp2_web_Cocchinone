@@ -1,0 +1,148 @@
+
+#contacto {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.form-contacto {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.campo label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid brown;
+    background-color: black;
+    color: aliceblue;
+    font-family: inherit;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: brown;
+}
+
+.btn-enviar {
+    margin-top: 10px;
+    padding: 10px 25px;
+    background-color: brown;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: brown;
+}
+
+
+.confirmacion {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-volver {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: brown;
+    color: aliceblue;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.btn-volver:hover {
+    background-color: brown;
+}
+
+a {
+    font-family: "Texto";
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.1rem;
+}
+
+a:hover {
+    color: brown;
+}
+
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 0.9rem;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+}
+
+body {
+    background-color: black; 
+    color: aliceblue; 
+    text-align: center;
+    font-family: "Texto";
+}
+
+h1 { color: brown; 
+    font-family: "Titulos";
+    font-size: 6rem;
+    text-align: center;
+  
+}
+
+p {
+  
+  margin-bottom: 1rem;
+
+}
+
+
+
+h2 { color: brown; 
+    font-family: "Titulos";
+    font-size: 2rem;
+    margin: 20px 0 10px;
+    
+  
+    
+}
+
+h3 { color: brown; 
+    font-family: "Titulos";
+    font-size: 1.8rem;
+    margin: 20px 0 10px;
+    }
+@font-face {
+  font-family: "Texto";
+  src: url("../css/fonts/Merriweather/Merriweather_24pt-Regular.ttf") format('truetype');
+}
+
+
+@font-face {
+  font-family: "Titulos";
+  src: url("../css/fonts/Cinzel/Cinzel-Bold.ttf") format('truetype');
+}
+

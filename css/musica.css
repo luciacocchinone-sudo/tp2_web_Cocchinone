@@ -1,0 +1,17 @@
+.audio-sobre {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.audio-sobre p {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: aliceblue;  
+}
+
+.audio-sobre audio,
+.audio-sobre iframe {
+    width: 300px;
+    max-width: 90%;
+    border-radius: 8px;
+}

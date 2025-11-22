@@ -1,0 +1,16 @@
+.volver {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: white;
+    background: black(0,0,0,0.7);
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.volver:hover {
+    background: brown(255,255,255,0.2);
+}

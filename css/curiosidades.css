@@ -1,0 +1,200 @@
+body {
+    background-color: black; 
+    color: aliceblue; 
+    text-align: center;
+    font-family: "Texto";
+}
+
+h1 { color: brown; 
+    font-family: "Titulos";
+    font-size: 6rem;
+    text-align: center;
+  
+}
+
+p {
+  
+  margin-bottom: 1rem;
+
+}
+
+
+
+h2 { color: brown; 
+    font-family: "Titulos";
+    font-size: 2rem;
+    margin: 20px 0 10px;
+    
+  
+    
+}
+
+h3 { color: brown ; 
+    font-family: "Titulos";
+    font-size: 1.8rem;
+    margin: 20px 0 10px;
+    
+  
+    
+}
+
+@font-face {
+  font-family: "Texto";
+  src: url("../css/fonts/Merriweather/Merriweather_24pt-Regular.ttf") format('truetype');
+}
+
+
+@font-face {
+  font-family: "Titulos";
+  src: url("../css/fonts/Cinzel/Cinzel-Bold.ttf") format('truetype');
+}
+
+
+
+
+a {
+    font-family: "Texto";
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.1rem;
+}
+
+a:hover {
+    color: brown;
+}
+
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 0.9rem;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+}
+
+
+
+
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;          
+  justify-content: center;  
+  gap: 30px;               
+  max-width: 1000px;        
+  margin: 40px auto 60px; 
+}
+
+
+.card {
+  position: relative;
+  width: 280px;           
+  height: 180px;           
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      
+  display: block;
+}
+
+
+.card-info {
+  position: absolute;
+  inset: 0;
+  background: black (0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+.card:hover .card-info {
+  opacity: 1;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("../imagenes/curiosidades.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.15;        
+  z-index: -1;
+  pointer-events: none;
+}
+
+
+main {
+ 
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+body > div {
+  display: flex;
+  justify-content: center;
+}
+
+.arcos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.arco {
+  width: 320px;          
+  background-color: black;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 35px black (0,0,0,0,0.85);
+  color: aliceblue;
+  cursor: pointer;
+  overflow: hidden;  
+    }
+
+.arco h3 {
+  margin: 0; 
+  margin-bottom: 10px;
+  color: brown;
+  font-family: "Titulos";
+  font-size: 1.6rem;
+}
+
+.arco p {
+  margin: 0;
+  max-height: 0;         
+  opacity: 0;
+  overflow: hidden;
+  line-height: 1.6;
+  font-size: 1.05rem;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  }
+
+  .arco:hover p {
+  max-height:  100% ;   
+  opacity: 1;
+  }
+
