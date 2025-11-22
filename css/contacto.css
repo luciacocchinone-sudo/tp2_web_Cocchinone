@@ -21,7 +21,8 @@
     font-weight: bold;
 }
 
-.campo input, .campo textarea {
+.campo input,
+.campo textarea {
     padding: 8px 10px;
     border-radius: 8px;
     border: 1px solid brown;
@@ -30,7 +31,8 @@
     font-family: inherit;
 }
 
-.campo input:focus, .campo textarea:focus {
+.campo input:focus,
+.campo textarea:focus {
     outline: none;
     border-color: brown;
 }
@@ -143,6 +145,7 @@ h3 { color: brown;
   font-family: "Titulos";
   src: url("../css/fonts/Cinzel/Cinzel-Bold.ttf") format('truetype');
 }
+
 
 
 
